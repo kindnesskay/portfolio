@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function page() {
   return (
-    <section className="flex flex-col w-full h-screen justify-center items-center">
+    <section className="flex flex-col w-full h-screen justify-center items-center bg-black">
       <Lamp />
       <div  className="flex flex-col justify-center z-10">
         <div>

@@ -2,3 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+.lamp{
+    opacity: 0;
+    animation: light-up 5s infinite
+}
+
+@keyframes light-up {
+    0%{opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+.lamprays{
+    opacity: 0;
+    animation: light-up-area 5s infinite
+}
+
+@keyframes light-up-area {
+    0%{opacity: 0;
+
+    }
+    50%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
