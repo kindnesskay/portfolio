@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 .lamp{
-    opacity: 0;
+    box-shadow: 0;
     animation: light-up 5s infinite
 }
 
 @keyframes light-up {
-    0%{opacity: 0;
+    0%{box-shadow: 0;
 
     }
     50%{
-        opacity: 1;
+        box-shadow: 100px;
     }
     100%{
-        opacity: 0;
+        box-shadow: 0;
     }
     
 }
 .lamprays{
-    opacity: 0;
-    animation: light-up-area 5s infinite
+    opacity: 0.1
+    
 }
 
 @keyframes light-up-area {
