@@ -3,27 +3,43 @@
 @tailwind utilities;
 
 .lamp{
+    box-shadow: 0;
     opacity: 0;
     animation: light-up 5s infinite
 }
 
 @keyframes light-up {
-    0%{opacity: 0;
+    0%{box-shadow: 0;
+        opacity: 0;
 
     }
     50%{
+        box-shadow: 100px;
+        opacity: 0.5;
+    }
+    80%{
+        box-shadow: 80px;
         opacity: 1;
     }
+
     100%{
+        box-shadow: 0;
         opacity: 0;
     }
     
 }
 .lamprays{
-    opacity: 0;
-    animation: light-up-area 5s infinite
-}
+    opacity: 0.1;
+    animation: light-up-area 5s infinite;
 
+    
+}
+._border{
+    border: 1px  solid;
+}
+.red-border{
+    border: 1px solid red;
+}
 @keyframes light-up-area {
     0%{opacity: 0;
 
@@ -31,6 +47,10 @@
     50%{
         opacity: 0.1;
     }
+    80%{
+        opacity: 0.2;
+    }
+    
     100%{
         opacity: 0;
     }
