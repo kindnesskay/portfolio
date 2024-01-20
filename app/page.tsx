@@ -19,7 +19,7 @@ export default function page() {
           <Link href={"https://github.com/kindnesskay"}>Github</Link>
         </div>
       </div>
-      <div className="min-h-screen snap-start flex flex-col items-center">
+      <div className="min-h-screen snap-start flex flex-col items-center px-8 pt-16">
         <h2 className="text-white font-bold text-lg p-4">Projects</h2>
         <Link href={"https://shop-bay-nine.vercel.app/"} target="_blank">
           <Image
