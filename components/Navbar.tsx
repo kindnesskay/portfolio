@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 export default function Navbar() {
@@ -7,19 +7,18 @@ export default function Navbar() {
     const href = e.currentTarget.href;
     const targetID = href.replace(/.*\#/, "");
     const element = document.getElementById(targetID);
-    if(!element)return
+    if (!element) return;
     window.scrollTo({
-      top: element?.getBoundingClientRect().top-80,
+      top: element?.getBoundingClientRect().top - 80,
       behavior: "smooth",
     });
   };
   return (
-    <nav className="h-16 bg-blue-950 p-2 fixed z-20 w-full flex items-center lg:justify-center gap-4">
-      <div className="h-full w-fit flex items-center lg:hidden">
-        <Image height={40} width={40} alt="menu" src={"/assets/menu.svg"} />
-      </div>
-      <div className="text-white font-bold max-lg:hidden">
-        <Link href={"#projects"} onClick={handleScroll}>Projects</Link>
+    <nav className="h-16 backdrop-blur-md p-2 fixed z-20 w-full flex justify-center items-center">
+      <div className="text-slate-500 font-bold max-w-5xl w-full">
+        <Link href={"#projects"} onClick={handleScroll}>
+          Projects
+        </Link>
       </div>
     </nav>
   );
