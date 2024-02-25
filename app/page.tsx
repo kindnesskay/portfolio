@@ -22,20 +22,20 @@ export default function page() {
         </div>
       </div>
       <div
-        className="min-h-screen snap-start flex flex-col items-center px-8 pt-20 "
+        className="min-h-screen justify-center flex flex-col items-center px-8 gap-4"
         id="projects"
       >
         {/* <h2 className="font-semibold text-3xl mb-12 text-white">Projects</h2> */}
-        <div className="font-bold text-xl md:text-2xl sm:text-3xl md:flex ">
-          <div className="md:w-1/2 flex justify-center flex-col">
-            <p className="text-md">E commerce website </p>
-            <p className="font-bold  p-2 w-full text-white">Shopbay</p>
-          </div>
 
+        <div className="font-bold text-xl md:text-2xl sm:text-3xl md:flex py-4 px-4 w-full max-w-2xl">
+          <div className="md:w-1/2 flex justify-center flex-col">
+            <p className="text-md">E-commerce </p>
+            <Link href={"https://shopbay.vercel.app/"} className="font-bold  mt-2 w-full text-white">Shopbay</Link>
+          </div>
           <Link
             href={"https://shopbay.vercel.app/"}
             target="_blank"
-            className="md:w-1/2"
+            className="w-full max-w-96 "
           >
             <Image
               src={"/webcapture-shopbay.jpeg"}
@@ -46,8 +46,26 @@ export default function page() {
             />
           </Link>
         </div>
+        <div className="font-bold text-xl md:text-2xl sm:text-3xl md:flex py-4 px-4 w-full max-w-2xl">
+          <div className="md:w-1/2 flex justify-center flex-col">
+            <p className="text-md">Random project </p>
+            <Link href={"https://random-project-generator.vercel.app"} className="font-bold mt-2 w-full text-white">R-P-G</Link>
+          </div>
+          <Link
+            href={"https://random-project-generator.vercel.app"}
+            target="_blank"
+            className="w-full max-w-96"
+          >
+            <Image
+              src={"/random-project.jpeg"}
+              width={400}
+              height={400}
+              alt="Random project generator"
+              className="w-auto h-auto  rounded-lg hover:border-2 border-solid border-white hover:scale-105 transition-transform"
+            />
+          </Link>
+        </div>
       </div>
-    
     </section>
   );
 }
